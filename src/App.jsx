@@ -1,12 +1,9 @@
-import './App.css'
+import "./App.css"; /* className="logo" */
+import "bootstrap/dist/css/bootstrap.min.css";
+import { FoodForm } from "./components/form.jsx";
 
 function App() {
-
-  return (
-    <>
-
-    </>
-  )
+  return <FoodForm />;
 }
 
-export default App
+export default App;
