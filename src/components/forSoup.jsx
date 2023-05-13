@@ -7,7 +7,7 @@ export const Soup = () => (
       Spiciness scale
     </Form.Label>
     <Col sm={9}>
-      <Form.Range min="1" max="10" />
+      <Form.Range name="spiciness_scale" min="1" max="10" />
       <Form.Text>
         <span>1</span>
         <span>2</span>

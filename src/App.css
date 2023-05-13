@@ -4,31 +4,22 @@
   padding: 2rem;
 }
 
+.form-range::-moz-range-thumb {
+  background: #213547;
+}
+
 .form-text {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+.form-text span {
+  color: #fbfbff;
 }
 
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dish-name {
+  color: #213547;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.title {
+  padding-bottom: 30px;
 }
