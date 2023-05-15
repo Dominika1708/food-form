@@ -61,7 +61,7 @@ export const FoodForm = ({ onSubmit, children }) => {
       const no_of_slices = form.elements.no_of_slices.value;
       const diameter = form.elements.diameter.value;
 
-      return onSubmit({
+      onSubmit({
         name,
         preparation_time,
         type,
@@ -72,7 +72,7 @@ export const FoodForm = ({ onSubmit, children }) => {
     if (type === "soup") {
       const spiciness_scale = form.elements.spiciness_scale.value;
 
-      return onSubmit({
+      onSubmit({
         name,
         preparation_time,
         type,
@@ -82,13 +82,14 @@ export const FoodForm = ({ onSubmit, children }) => {
     if (type === "sandwich") {
       const slices_of_bread = form.elements.slices_of_bread.value;
 
-      return onSubmit({
+      onSubmit({
         name,
         preparation_time,
         type,
         slices_of_bread,
       });
     }
+    form.reset();
   };
 
   return (
